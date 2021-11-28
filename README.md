@@ -31,3 +31,16 @@ pm2 start main.py --name arkbot --interpreter python3
 ```
 
 This allows you to easily start/stop/restart the bot
+
+## Dotenv Variables
+
+| Variable  | Description  |
+|---|---|
+| DISCORD_PRIVATE_KEY | Your bot token |
+| PREFIX | Prefix for the bot to use for the commands, by default this is `!` |
+| FAUCET_PASSPHRASE | The passphrase of the faucet address |
+| FAUCET_SECOND_PASSPHRASE | The second passphrase of the faucet address (optional) |
+| FAUCET_AMOUNT | The amount the faucet will send to a user |
+| FAUCET_CURRENCY | The currency name that will be used for the success message |
+| FAUCET_HOST | The full url to an api to fetch data from and post transactions to, for example `https://dwallets.ark.io/api` (no trailing `/`) |
+| FAUCET_ADDRESS_PREFIX | The first letter of a valid address. The faucet has this as basic check for the user |
